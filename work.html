@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>작품 - 이지우 포트폴리오</title>
+    <link rel="stylesheet" href="css/work-style.css">
+</head>
+<body>
+    <div id = "Wrap">
+        <!--상위 백그라운드-->
+        <div id = "header">
+            <div class = "logo">
+                <a href = "index.html"><img src = "images/logo.png" alt = "로고"></a>
+            </div>
+            <!--서치 박스 안에 이지우 텍스트-->
+            <div class = "search">
+                <input type="text" placeholder="이지우 작품" id="search-bar">
+            </div>
+
+            <!--프로필, 작품 버튼 부분 백그라운드-->
+            <div class = "menu">
+                <!--프로필, 작품 버튼-->
+                <ul class = "sidemenu">
+                    <li><a href = "index.html">프로필</a></li>
+                    <li><a href = "work.html">작품</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div id = "container">
+            <!-- 작품 갤러리 -->
+            <div id="work-gallery">
+                <div class="gallery">
+                    <div class="work-image" onclick="openModal(0)">
+                        <img src="images/Work_UIUX.png" alt="작품1">
+                    </div>
+                    <div class="work-image" onclick="openModal(1)">
+                        <img src="images/Work_cards.png" alt="작품2">
+                    </div>
+                    <div class="work-image" onclick="openModal(2)">
+                        <img src="images/Work_unreal1.png" alt="작품3">
+                    </div>
+                    <div class="work-image" onclick="openModal(3)">
+                        <img src="images/Work_unreal2.png" alt="작품4">
+                    </div>
+                    <div class="work-image" onclick="openModal(4)">
+                        <img src="images/Work_miso.png" alt="작품5">
+                    </div>
+                    <div class="work-image" onclick="openModal(5)">
+                        <img src="images/Work_puding.png" alt="작품6">
+                    </div>
+                    <div class="work-image" onclick="openModal(6)">
+                        <img src="images/Work_3Dspace.png" alt="작품7">
+                    </div>
+                    <div class="work-image" onclick="openModal(7)">
+                        <img src="images/Work_3Droom.png" alt="작품8">
+                    </div>
+                    <div class="work-image" onclick="openModal(8)">
+                        <img src="images/Work_lensme.png" alt="작품9">
+                    </div>
+                    <div class="work-image" onclick="openModal(9)">
+                        <img src="images/Work_aji.png" alt="작품10">
+                    </div>
+                    <div class="work-image" onclick="openModal(10)">
+                        <img src="images/Work_hamster.png" alt="작품11">
+                    </div>
+                    <div class="work-image" onclick="openModal(11)">
+                        <img src="images/Work_video.png" alt="작품12">
+                    </div>
+                </div>
+            </div>
+
+            <!-- 모달 팝업 -->
+            <div class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1></h1>
+                        <p></p>
+                        <div class="icons"></div> <!-- 사용 앱 아이콘 표시 -->
+                        <button class="close-button">&times;</button>
+                    </div>
+                    <hr />
+                    <div class="modal-body">
+                        <p class="description"></p> <!-- 작품 설명 -->
+                        <div class="extra-images"></div> <!-- 추가 이미지 섹션 -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer"></div>
+    </div>
+
+    <script src="js/slider.js"></script>
+</body>
+</html>
